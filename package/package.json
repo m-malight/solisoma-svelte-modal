@@ -1,6 +1,6 @@
 {
   "name": "@solisoma/svelte-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "Modal.svelte",
   "author": "solisoma <solisomamadubueze@gmail.com>",
