@@ -19,14 +19,15 @@
 </script>
 
 <main
-  class={`h-[100vh] w-[100vw] ${modalVisible ? "block" : "hidden"} right-0 bottom-0 top-0 left-0 bg-black bg-opacity-40 absolute flex flex-col items-center`}
+  class={`solisoma-modal-h-[100vh] solisoma-modal-w-[100vw] ${modalVisible ? "solisoma-modal-block" : "solisoma-modal-hidden"} solisoma-modal-right-0 solisoma-modal-bottom-0 solisoma-modal-top-0 solisoma-modal-left-0 solisoma-modal-bg-black solisoma-modal-bg-opacity-40 solisoma-modal-absolute solisoma-modal-flex solisoma-modal-flex-col solisoma-modal-items-center`}
 >
-  <div class="relative top-[10vh]">
-    <button class="absolute right-3 w-8" on:click={() => modalClose()}
-      ><MdClose /></button
+  <div class="solisoma-modal-relative solisoma-modal-top-[10vh]">
+    <button
+      class="solisoma-modal-absolute solisoma-modal-right-3 solisoma-modal-w-8"
+      on:click={() => modalClose()}><MdClose /></button
     >
     <div
-      class={`relative w-screen h-[75vh] top-9 py-1 px-2 overflow-hidden bg-white border-2 border-gray-300 md:rounded-lg md:w-[70vw] ${classNames}`}
+      class={`solisoma-modal-relative solisoma-modal-w-screen solisoma-modal-h-[75vh] solisoma-modal-top-9 solisoma-modal-py-1 solisoma-modal-px-2 solisoma-modal-overflow-hidden solisoma-modal-bg-white solisoma-modal-border-2 solisoma-modal-border-gray-300 solisoma-modal-md:rounded-lg solisoma-modal-md:w-[70vw] ${classNames}`}
     >
       {#if useHtml}
         {@html setHtml}
