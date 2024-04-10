@@ -22,7 +22,7 @@
   class={`h-[100vh] w-[100vw] ${modalVisible ? "block" : "hidden"} right-0 bottom-0 top-0 left-0 bg-black bg-opacity-40 absolute flex flex-col items-center`}
 >
   <div class="relative top-[10vh]">
-    <button class="absolute right-3 w-8" on:click={() => modalClose()}
+    <button class="absolute right-3 w-8 bg-white" on:click={() => modalClose()}
       ><MdClose /></button
     >
     <div
