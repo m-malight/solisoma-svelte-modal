@@ -84,11 +84,11 @@ It's important to use `useHtml` and `setHtml` with caution, as it can expose you
 
 To implement this feature, you'll need to create another Svelte component responsible for rendering the interface of the `Modal`. Keep in mind that **@solisoma/svelte-modal** passes certain props to its child, whether passed through the `component` prop or as a direct child. These props include:
 
-- `modalClose`: A function prop that enables the developer to close the `Modal` based on events like `on:click`. It doesn't require any parameters.
+- `closeModal`: A function prop that enables the developer to close the `Modal` based on events like `on:click`. It doesn't require any parameters.
 
 - `modalState`: This prop holds the current value of the state passed to the `Modal`.
 
-- `modalSetStates`: Used for `setState`, this prop updates the state of the `modalState`.
+- `setModalState`: Used for `setState`, this prop updates the state of the `modalState`.
 
 Here's an example of the child component:
 
@@ -96,14 +96,14 @@ Here's an example of the child component:
 // Component.svelte
 
 <script>
-  export let modalClose;
+  export let closeModal;
   export let modalStates;
-  export let modalSetStates;
+  export let setModalState;
 </script>
 
 <div>
   <p>Hello</p>
-  <button on:click={modalClose}>Close Modal</button>
+  <button on:click={closeModal}>Close Modal</button>
 </div>
 ```
 
@@ -139,14 +139,14 @@ Example:
 // Component.svelte
 
 <script>
-  export let modalClose;
+  export let closeModal;
   export let modalStates;
-  export let modalSetStates;
+  export let setModalState;
 </script>
 
 <div>
   <p>Hello</p>
-  <button on:click={modalClose}>Close Modal</button>
+  <button on:click={closeModal}>Close Modal</button>
 </div>
 
 ```
